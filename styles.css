@@ -12,6 +12,7 @@
     gap: 30 px;
     background-color: black;
     color: #fff;
+    
    
 
 }
@@ -21,15 +22,38 @@
     font-size: 2em;
     margin: 80px;
     align-items: center;
+    color: #ffffff ;
+    cursor: pointer;
+text-decoration: none;
+text-align: center;
 
 
+
+
+}
+
+.cabeçalho a:hover{
+     color: #913232;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+
+.link-whatsapp {
+    height: 50px;
+    display: flex;
+    right:20px;
+    bottom: 20px;
+    cursor: pointer;
 }
 
 .cabeçalho img {
-    margin: 80px;
+    margin: 1.5em;
+    width: 170px;
+    height: 200px;
 }
 
 body {
+    
    background-color: gradient;
    height: 100vh;
    
@@ -37,22 +61,36 @@ body {
 }
 
 main {
+   
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(231, 63, 63) 100%);
 }
 
 main .titulo {
     
     font-size: 150px;
+    color: #4d4141;
     font-weight: 400;
     margin-left: 50px;
     margin-top: 350px;
     width: 100vw;
     height: 100vh;
+    text-shadow:hsl(209, 83%, 23%)  ;
+}
+
+main .subtitulos{
+    display: grid;
+    grid-row: auto;
+  align-items: center;
+  justify-content: center;
+     font-size: 20px;
+    color: #4d4141;
+    font-weight: 400;
+    margin-top: 30px;
     text-shadow:hsl(209, 83%, 23%)  ;
 }
 
@@ -93,7 +131,7 @@ main .titulo {
 .container-reverse {
     width:100vw;
     height: 200px;
-    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #050505 10% 90%, transparent);
 }
     
 
@@ -155,4 +193,53 @@ main .titulo {
         to {
         left: 100%;
         }
+    }
+@media(max-width:900px) {
+  
+.cabeçalho a{
+    font-size: 1em;
+    margin: 5px;
+
+}
+
+main .titulo{
+     font-size: 40px;
+    font-weight: 700;
+    margin-left: 25px;
+    margin-top: 150px;
+    justify-items: center;
+}
+
+main .subtitulos{
+
+}
+
+
+.container-reverse .carrossel .item img {
+    width: 100%;
+    gap: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.item{
+      font-size: 0.5em;
+}
+
+.cabeçalho img {
+    margin: 1.5em;
+    width: 40px;
+    height: 60px;
+}
+
+.cabeçalho a .link-whatsapp {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    right:20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+
 }
