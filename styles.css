@@ -7,7 +7,7 @@
 .cabeçalho {
     position: absolute;
     display: flex;
-
+    height: 250px;
     width: 100%;
     gap: 30 px;
     background-color: black;
@@ -20,15 +20,13 @@
 .cabeçalho a {
     display: flex;
     font-size: 2em;
-    margin: 80px;
+    margin: 100px;
     align-items: center;
+    justify-items: center;
     color: #ffffff ;
     cursor: pointer;
 text-decoration: none;
 text-align: center;
-
-
-
 
 }
 
@@ -38,8 +36,13 @@ text-align: center;
     transition: 0.5s ease-in-out;
 }
 
-.link-whatsapp {
+.cabeçalho .questionário {
+    margin-left: 200px;
+}
+
+.cabeçalho .link-whatsapp {
     height: 50px;
+    width: 50px;
     display: flex;
     right:20px;
     bottom: 20px;
@@ -76,22 +79,39 @@ main .titulo {
     color: #4d4141;
     font-weight: 400;
     margin-left: 50px;
-    margin-top: 350px;
+    margin-top: 250px;
     width: 100vw;
     height: 100vh;
     text-shadow:hsl(209, 83%, 23%)  ;
 }
+main .links {
+     position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 470px;
+    height: 50px;
+    width: 100%;
+    gap: 30 px;
+       
+}
 
-main .subtitulos{
-    display: grid;
-    grid-row: auto;
-  align-items: center;
-  justify-content: center;
-     font-size: 20px;
-    color: #4d4141;
-    font-weight: 400;
-    margin-top: 30px;
-    text-shadow:hsl(209, 83%, 23%)  ;
+main .links .subtitulos{
+     margin: 50px;
+     margin-left: 200px;
+    font-size: 2em;
+    color:hsl(209, 83%, 23%) ;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+
+
+}
+
+main .links .subtitulos:hover {
+     color: #fd6602;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
 }
 
 .container {
@@ -194,27 +214,122 @@ main .subtitulos{
         left: 100%;
         }
     }
+main .links .termo{
+      margin: 50px;
+     margin-left: 100px;
+    font-size: 2em;
+    color:hsl(209, 83%, 23%) ;
+    cursor: pointer;
+    text-decoration: none;
+}
+main .links .termo:hover {
+      color: #fd6602;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+
+main .links .orientaçoes{
+      margin: 50px;
+     margin-left: 100px;
+    font-size: 2em;
+    color:hsl(209, 83%, 23%) ;
+    cursor: pointer;
+    text-decoration: none;
+}
+main .links .orientaçoes:hover{
+      color: #fd6602;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+
+main .voltar{
+     margin: 50px;
+     margin-left: 100px;
+    font-size: 2em;
+    color:hsl(209, 83%, 23%) ;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main .linksdeimagens{
+    width: 100%;
+      margin: 400px;
+     margin-left: 50px;
+     padding: 50px;
+    font-size: 2em;
+    color:hsl(209, 83%, 23%) ;
+    cursor: pointer;
+    
+}
+main .linksdeimagens .canaldecriancas{
+    margin-left: 30px;
+}
+main .linksdeimagens .siso{
+    margin-left: 30px;
+}
+main .linksdeimagens .canais{
+    margin-left: 30px;
+}
+main .linksdeimagens .venosa{
+    margin-left: 30px;
+}
+
+main .linksdeimagens .voltar1{
+    margin-top: 10px;
+    margin-left: 30px;
+}
 @media(max-width:900px) {
+
+.cabeçalho{
+        height: 100px;
+        
+            }
   
 .cabeçalho a{
     font-size: 1em;
     margin: 5px;
 
 }
+.cabeçalho .questionário{
+    margin-left: 5px;
+    
+}
 
 main .titulo{
      font-size: 40px;
     font-weight: 700;
-    margin-left: 25px;
     margin-top: 150px;
+    margin-left: 20px;
     justify-items: center;
 }
 
-main .subtitulos{
+main .links {
+    margin-top: 250px;
+  justify-content: center;
+  
+   }
 
+main .links .subtitulos{
+    font-size: 25px;
+    margin: 0.6em;
+  
+   
 }
 
+main .links .termo{
+    
+    font-size: 15px;
+    margin: 0.8em;
+}
+main .links .orientaçoes{
+     font-size: 15px;
+    margin: 0.8em;
+}
 
+main .links .voltar{
+    font-size: 15px;
+    margin: 0.8em;
+}
 .container-reverse .carrossel .item img {
     width: 100%;
     gap: 5px;
