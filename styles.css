@@ -20,7 +20,7 @@
 .cabeçalho a {
     display: flex;
     font-size: 2em;
-    margin: 100px;
+    margin: 80px;
     align-items: center;
     justify-items: center;
     color: #ffffff ;
@@ -55,6 +55,14 @@ text-align: center;
     height: 200px;
 }
 
+.cabeçalho .insta{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    bottom: 20px;
+    cursor: pointer;
+}
+
 body {
     
    background-color: gradient;
@@ -70,13 +78,13 @@ main {
     gap: 20px;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(231, 63, 63) 100%);
+   
 }
 
 main .titulo {
     
     font-size: 150px;
-    color: #4d4141;
+    color: #252424;
     font-weight: 400;
     margin-left: 50px;
     margin-top: 250px;
@@ -99,7 +107,8 @@ main .links .subtitulos{
      margin: 50px;
      margin-left: 200px;
     font-size: 2em;
-    color:hsl(209, 83%, 23%) ;
+    font-weight: bold;
+    color:hsl(240, 76%, 83%) ;
     cursor: pointer;
     text-decoration: none;
     
@@ -115,8 +124,9 @@ main .links .subtitulos:hover {
 }
 
 .container {
-    color:hsl(209, 83%, 23%) ;
+    color:hsl(209, 89%, 71%) ;
     font-stretch: ultra-expanded ;
+    font-weight: bold;
     width: 100%;
     height: 50px;
     mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
@@ -278,22 +288,40 @@ main .linksdeimagens .voltar1{
     margin-top: 10px;
     margin-left: 30px;
 }
+
+main .mascara{
+    margin-top: 100px;
+     height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 10%, rgba(10, 12, 16, 0.7) 30%, rgba(10, 12, 16, 0.99) 65%);
+    position: fixed;
+    z-index: -1;
+}
+
+main .mascara img{
+    position: fixed;
+    width: 1200px;
+    height: 1200px;
+    z-index: -2;
+    opacity: 30%;
+}
 @media(max-width:900px) {
 
 .cabeçalho{
-        height: 100px;
+     height: 100px;
         
             }
   
 .cabeçalho a{
     font-size: 1em;
     margin: 5px;
-
+    
 }
 .cabeçalho .questionário{
     margin-left: 5px;
     
 }
+
 
 main .titulo{
      font-size: 40px;
@@ -338,7 +366,7 @@ main .links .voltar{
 }
 
 .item{
-      font-size: 0.5em;
+      font-size: 0.9em;
 }
 
 .cabeçalho img {
@@ -348,8 +376,8 @@ main .links .voltar{
 }
 
 .cabeçalho a .link-whatsapp {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     right:20px;
     bottom: 20px;
